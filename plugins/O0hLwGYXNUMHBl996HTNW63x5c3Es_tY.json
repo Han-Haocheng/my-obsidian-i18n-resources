@@ -1,0 +1,136 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "pretty-properties",
+        "version": "1.0.0",
+        "title": "Pretty Properties",
+        "description": "Pretty Properties Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "1.10.17",
+        "author": "HanHaocheng"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Can not update hiding metadata container",
+                    "target": "Can not update hiding metadata container"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Can not build tag decorations",
+                    "target": "Can not build tag decorations"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Can not update metadata widgets",
+                    "target": "Can not update metadata widgets"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Can not render title icon in preview mode",
+                    "target": "Can not render title icon in preview mode"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Can not render title icon in edit mode",
+                    "target": "Can not render title icon in edit mode"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Can not update cover for markdown view",
+                    "target": "Can not update cover for markdown view"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Can not update metadata containers on loading frontmatter",
+                    "target": "Can not update metadata containers on loading frontmatter"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Can not update images for file view",
+                    "target": "Can not update images for file view"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Can not render title icon on file load",
+                    "target": "Can not render title icon on file load"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Can not update metadata containers on file load",
+                    "target": "Can not update metadata containers on file load"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setPlaceholder",
+                    "source": "DD.MM.YYYY HH:mm",
+                    "target": "DD.MM.YYYY HH:mm"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "title",
+                    "source": "Pretty properties settings backup",
+                    "target": "Pretty properties settings backup"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "error(\"Can not update hiding metadata container\")",
+                    "target": "error(\"Can not update hiding metadata container\")"
+                },
+                {
+                    "source": "setPlaceholder(\"DD.MM.YYYY HH:mm\")",
+                    "target": "setPlaceholder(\"DD.MM.YYYY HH:mm\")"
+                },
+                {
+                    "source": "error(\"Can not build tag decorations\")",
+                    "target": "error(\"Can not build tag decorations\")"
+                },
+                {
+                    "source": "error(\"Can not update metadata widgets\")",
+                    "target": "error(\"Can not update metadata widgets\")"
+                },
+                {
+                    "source": "error(\"Can not render title icon in preview mode\")",
+                    "target": "error(\"Can not render title icon in preview mode\")"
+                },
+                {
+                    "source": "error(\"Can not render title icon in edit mode\")",
+                    "target": "error(\"Can not render title icon in edit mode\")"
+                },
+                {
+                    "source": "error(\"Can not update cover for markdown view\")",
+                    "target": "error(\"Can not update cover for markdown view\")"
+                },
+                {
+                    "source": "error(\"Can not update metadata containers on loading frontmatter\")",
+                    "target": "error(\"Can not update metadata containers on loading frontmatter\")"
+                },
+                {
+                    "source": "error(\"Can not update images for file view\")",
+                    "target": "error(\"Can not update images for file view\")"
+                },
+                {
+                    "source": "error(\"Can not render title icon on file load\")",
+                    "target": "error(\"Can not render title icon on file load\")"
+                },
+                {
+                    "source": "error(\"Can not update metadata containers on file load\")",
+                    "target": "error(\"Can not update metadata containers on file load\")"
+                }
+            ]
+        }
+    }
+}

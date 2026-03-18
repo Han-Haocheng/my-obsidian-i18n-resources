@@ -1,0 +1,178 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "better-fn",
+        "version": "1.0.0",
+        "title": "Better footnote",
+        "description": "Better footnote Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "1.0.1",
+        "author": "HanHaocheng"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "允许预览弹窗之间的平滑过渡",
+                    "target": "允许预览弹窗之间的平滑过渡"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "appendText",
+                    "source": "注意：如果启用，一次只能显示一个预览弹窗",
+                    "target": "注意：如果启用，一次只能显示一个预览弹窗"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "no info for key %s in %o",
+                    "target": "no info for key %s in %o"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "first child not anchor",
+                    "target": "first child not anchor"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "refEl %o found in %o, pop null",
+                    "target": "refEl %o found in %o, pop null"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "error",
+                    "source": "Unable to create popover: ref info not found in %o",
+                    "target": "Unable to create popover: ref info not found in %o"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "loading BetterFn",
+                    "target": "loading BetterFn"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "log",
+                    "source": "unloading BetterFn",
+                    "target": "unloading BetterFn"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "在文档底部显示参考部分",
+                    "target": "在文档底部显示参考部分"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "显示参考",
+                    "target": "显示参考"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "平滑过渡",
+                    "target": "平滑过渡"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setName(\"显示参考\")",
+                    "target": "setName(\"显示参考\")"
+                },
+                {
+                    "source": "setDesc(\"在文档底部显示参考部分\")",
+                    "target": "setDesc(\"在文档底部显示参考部分\")"
+                },
+                {
+                    "source": "setName(\"平滑过渡\")",
+                    "target": "setName(\"平滑过渡\")"
+                },
+                {
+                    "source": "appendText(\"允许预览弹窗之间的平滑过渡\")",
+                    "target": "appendText(\"允许预览弹窗之间的平滑过渡\")"
+                },
+                {
+                    "source": "appendText(\"注意：如果启用，一次只能显示一个预览弹窗\")",
+                    "target": "appendText(\"注意：如果启用，一次只能显示一个预览弹窗\")"
+                },
+                {
+                    "source": "error(\"PopperJS: an invalid property has been provided to the \\\"\" + modifier.name + \"\\\" modifier, valid properties are \" + VALID_PROPERTIES.map(function (s) {\n            return \"\\\"\" + s + \"\\\"\";\n          }).join(', ') + \"; but \\\"\" + key + \"\\\" was provided.\")",
+                    "target": "error(\"PopperJS: an invalid property has been provided to the \\\"\" + modifier.name + \"\\\" modifier, valid properties are \" + VALID_PROPERTIES.map(function (s) {\n            return \"\\\"\" + s + \"\\\"\";\n          }).join(', ') + \"; but \\\"\" + key + \"\\\" was provided.\")"
+                },
+                {
+                    "source": "error(\"no info for key %s in %o\", keyOrEl, infoList);\n        throw new TypeError(\"no info for key\")",
+                    "target": "error(\"no info for key %s in %o\", keyOrEl, infoList);\n        throw new TypeError(\"no info for key\")"
+                },
+                {
+                    "source": "error(\"first child not anchor\")",
+                    "target": "error(\"first child not anchor\")"
+                },
+                {
+                    "source": "error(\"Unable to create popover: ref info not found in %o\", infoList);\n        }\n        shouldCreateSingleton = true;\n        // NOTE: using \"display:none\" or hidden will block markdown-preview-pusher\n        if (!this.settings.showFnRef)\n            section.addClass(\"visuallyhidden\")",
+                    "target": "error(\"Unable to create popover: ref info not found in %o\", infoList);\n        }\n        shouldCreateSingleton = true;\n        // NOTE: using \"display:none\" or hidden will block markdown-preview-pusher\n        if (!this.settings.showFnRef)\n            section.addClass(\"visuallyhidden\")"
+                },
+                {
+                    "source": "log(\"loading BetterFn\")",
+                    "target": "log(\"loading BetterFn\")"
+                },
+                {
+                    "source": "log(\"unloading BetterFn\")",
+                    "target": "log(\"unloading BetterFn\")"
+                },
+                {
+                    "source": "name: 'applyStyles'",
+                    "target": "name: 'applyStyles'"
+                },
+                {
+                    "source": "name: 'arrow'",
+                    "target": "name: 'arrow'"
+                },
+                {
+                    "source": "name: 'computeStyles'",
+                    "target": "name: 'computeStyles'"
+                },
+                {
+                    "source": "name: 'eventListeners'",
+                    "target": "name: 'eventListeners'"
+                },
+                {
+                    "source": "name: 'flip'",
+                    "target": "name: 'flip'"
+                },
+                {
+                    "source": "text: 'reference'",
+                    "target": "text: 'reference'"
+                },
+                {
+                    "source": "name: 'hide'",
+                    "target": "name: 'hide'"
+                },
+                {
+                    "source": "name: 'offset'",
+                    "target": "name: 'offset'"
+                },
+                {
+                    "source": "name: 'popperOffsets'",
+                    "target": "name: 'popperOffsets'"
+                },
+                {
+                    "source": "name: 'preventOverflow'",
+                    "target": "name: 'preventOverflow'"
+                },
+                {
+                    "source": "name: '$$tippy'",
+                    "target": "name: '$$tippy'"
+                },
+                {
+                    "source": "innerText = \"\"",
+                    "target": "innerText = \"\""
+                }
+            ]
+        }
+    }
+}

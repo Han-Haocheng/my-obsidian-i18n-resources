@@ -1,0 +1,68 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "tag-wrangler",
+        "version": "1.0.0",
+        "title": "Tag Wrangler",
+        "description": "Tag Wrangler Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "0.6.4",
+        "author": "HanHaocheng"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "CallExpression",
+                    "name": "setContent",
+                    "source": "输入新名称 (必须是有效的 Obsidian 标签名称):\n",
+                    "target": "输入新名称 (必须是有效的 Obsidian 标签名称):\n"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "警告：不能撤消！",
+                    "target": "警告：不能撤消！"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "创建标签页",
+                    "target": "创建标签页"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "未更改或空标签：未进行任何更改。",
+                    "target": "未更改或空标签：未进行任何更改。"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "Notice(\"未更改或空标签：未进行任何更改。\")",
+                    "target": "Notice(\"未更改或空标签：未进行任何更改。\")"
+                },
+                {
+                    "source": "Notice(`操作 ${u.aborted?\"取消\":\"完成\"}: ${f} file(s) updated`)",
+                    "target": "Notice(`操作 ${u.aborted?\"取消\":\"完成\"}: ${f} file(s) updated`)"
+                },
+                {
+                    "source": "setTitle(`重命名 #${s}（以及所有子标签）`)",
+                    "target": "setTitle(`重命名 #${s}（以及所有子标签）`)"
+                },
+                {
+                    "source": "Notice(`\"${t}\" 不是一个有效的 Obsidian 标签名称`)",
+                    "target": "Notice(`\"${t}\" 不是一个有效的 Obsidian 标签名称`)"
+                },
+                {
+                    "source": "setTitle(\"警告：不能撤消！\")",
+                    "target": "setTitle(\"警告：不能撤消！\")"
+                },
+                {
+                    "source": "name:\"所有\"",
+                    "target": "name:\"所有\""
+                }
+            ]
+        }
+    }
+}

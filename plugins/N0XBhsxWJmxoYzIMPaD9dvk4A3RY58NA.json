@@ -1,0 +1,506 @@
+{
+    "schemaVersion": 1,
+    "metadata": {
+        "plugin": "find-unlinked-files",
+        "version": "1.0.0",
+        "title": "Find orphaned files and broken links",
+        "description": "Find orphaned files and broken links Localization & Tweaks",
+        "language": "zh-cn",
+        "supportedVersions": "1.10.1",
+        "author": "HanHaocheng"
+    },
+    "dict": {
+        "main.js": {
+            "ast": [
+                {
+                    "type": "AssignmentExpression",
+                    "name": "outerHTML",
+                    "source": "<a href='https://ko-fi.com/F1F195IQ5' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>",
+                    "target": "<a href='https://ko-fi.com/F1F195IQ5' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "设置输出文件的名称（不带文件扩展名）。请确保不存在同名文件，因为它将被覆盖！如果名称为空，则设置默认名称。",
+                    "target": "设置输出文件的名称（不带文件扩展名）。请确保不存在同名文件，因为它将被覆盖！如果名称为空，则设置默认名称。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "缩进线条以禁用链接并清理图形视图",
+                    "target": "缩进线条以禁用链接并清理图形视图"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "启用以排除给定目录中的文件。禁用仅包含给定目录中的文件",
+                    "target": "启用以排除给定目录中的文件。禁用仅包含给定目录中的文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "在新行中添加每个目录路径",
+                    "target": "在新行中添加每个目录路径"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "在新行中添加每个文件路径（带文件扩展名！）",
+                    "target": "在新行中添加每个文件路径（带文件扩展名！）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "排除包含给定文件作为链接的文件。在新行中添加每个文件路径（带文件扩展名！）。将其设置为“*”以排除带有链接的文件。",
+                    "target": "排除包含给定文件作为链接的文件。在新行中添加每个文件路径（带文件扩展名！）。将其设置为“*”以排除带有链接的文件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "启用以排除具有给定文件类型的文件。禁用仅包含具有给定文件类型的文件",
+                    "target": "启用以排除具有给定文件类型的文件。禁用仅包含具有给定文件类型的文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "效果取决于上面的切换开关",
+                    "target": "效果取决于上面的切换开关"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "排除包含给定标记的文件。添加用逗号分隔的每个标记（不含 `#`)",
+                    "target": "排除包含给定标记的文件。添加用逗号分隔的每个标记（不含 `#`)"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "添加以逗号分隔的每个文件类型。设置为“*”可删除所有文件。",
+                    "target": "添加以逗号分隔的每个文件类型。设置为“*”可删除所有文件。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "排除指定文件中的链接。在新行中添加每个文件路径（带文件扩展名！）",
+                    "target": "排除指定文件中的链接。在新行中添加每个文件路径（带文件扩展名！）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "排除具有指定文件类型的链接。添加以逗号分隔的每个文件类型",
+                    "target": "排除具有指定文件类型的链接。添加以逗号分隔的每个文件类型"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "排除文件中包含给定标记的链接。添加用逗号分隔的每个标记（不含 `#`)",
+                    "target": "排除文件中包含给定标记的链接。添加用逗号分隔的每个标记（不含 `#`)"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "排除特定文件。在新行中添加每个文件路径（带文件扩展名！）",
+                    "target": "排除特定文件。在新行中添加每个文件路径（带文件扩展名！）"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "排除指定目录中的文件。在新行中添加每个目录路径",
+                    "target": "排除指定目录中的文件。在新行中添加每个目录路径"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setDesc",
+                    "source": "如果你喜欢这个插件，可以考虑捐款支持持续开发。",
+                    "target": "如果你喜欢这个插件，可以考虑捐款支持持续开发。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "打开输出文件",
+                    "target": "打开输出文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "输出文件名",
+                    "target": "输出文件名"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "禁用工作链接",
+                    "target": "禁用工作链接"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "排除给定目录中的文件",
+                    "target": "排除给定目录中的文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "排除文件",
+                    "target": "排除文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "排除链接",
+                    "target": "排除链接"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "排除具有给定文件类型的文件",
+                    "target": "排除具有给定文件类型的文件"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "File types",
+                    "target": "File types"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "排除标签",
+                    "target": "排除标签"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "每个命令要删除的文件类型。请参阅README。",
+                    "target": "每个命令要删除的文件类型。请参阅README。"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Exclude filetypes",
+                    "target": "Exclude filetypes"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "Exclude directories",
+                    "target": "Exclude directories"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setName",
+                    "source": "捐献",
+                    "target": "捐献"
+                },
+                {
+                    "type": "CallExpression",
+                    "name": "setTitle",
+                    "source": "查找孤立文件",
+                    "target": "查找孤立文件"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "找不到文件 - 请先运行 “查找损坏的文件 ”命令",
+                    "target": "找不到文件 - 请先运行 “查找损坏的文件 ”命令"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "未发现断开链接",
+                    "target": "未发现断开链接"
+                },
+                {
+                    "type": "NewExpression",
+                    "name": "Notice",
+                    "source": "找不到文件 - 请先运行 “查找孤立文件 ”命令",
+                    "target": "找不到文件 - 请先运行 “查找孤立文件 ”命令"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "查找孤立文件",
+                    "target": "查找孤立文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "查找断开的链接",
+                    "target": "查找断开的链接"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "删除具有特定扩展名的孤立文件。请参阅README",
+                    "target": "删除具有特定扩展名的孤立文件。请参阅README"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "创建断链的连接文件",
+                    "target": "创建断链的连接文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "查找没有标签的文件",
+                    "target": "查找没有标签的文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "查找空文件",
+                    "target": "查找空文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "name",
+                    "source": "删除空文件",
+                    "target": "删除空文件"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "取消",
+                    "target": "取消"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "确认",
+                    "target": "确认"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "查找孤立文件的设置",
+                    "target": "查找孤立文件的设置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "查找断开链接的设置",
+                    "target": "查找断开链接的设置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "查找无标签文件的设置",
+                    "target": "查找无标签文件的设置"
+                },
+                {
+                    "type": "ObjectProperty",
+                    "name": "text",
+                    "source": "查找空文件的设置",
+                    "target": "查找空文件的设置"
+                }
+            ],
+            "regex": [
+                {
+                    "source": "setText(\n      \"移动\" + this.filesToDelete.length + \" 文件到回收站?\"\n    )",
+                    "target": "setText(\n      \"移动\" + this.filesToDelete.length + \" 文件到回收站?\"\n    )"
+                },
+                {
+                    "source": "setName(\"打开输出文件\")",
+                    "target": "setName(\"打开输出文件\")"
+                },
+                {
+                    "source": "setName(\"输出文件名\")",
+                    "target": "setName(\"输出文件名\")"
+                },
+                {
+                    "source": "setDesc(\n      \"设置输出文件的名称（不带文件扩展名）。请确保不存在同名文件，因为它将被覆盖！如果名称为空，则设置默认名称。\"\n    )",
+                    "target": "setDesc(\n      \"设置输出文件的名称（不带文件扩展名）。请确保不存在同名文件，因为它将被覆盖！如果名称为空，则设置默认名称。\"\n    )"
+                },
+                {
+                    "source": "setName(\"禁用工作链接\")",
+                    "target": "setName(\"禁用工作链接\")"
+                },
+                {
+                    "source": "setDesc(\n      \"缩进线条以禁用链接并清理图形视图\"\n    )",
+                    "target": "setDesc(\n      \"缩进线条以禁用链接并清理图形视图\"\n    )"
+                },
+                {
+                    "source": "setName(\"排除给定目录中的文件\")",
+                    "target": "setName(\"排除给定目录中的文件\")"
+                },
+                {
+                    "source": "setDesc(\n      \"启用以排除给定目录中的文件。禁用仅包含给定目录中的文件\"\n    )",
+                    "target": "setDesc(\n      \"启用以排除给定目录中的文件。禁用仅包含给定目录中的文件\"\n    )"
+                },
+                {
+                    "source": "setDesc(\"在新行中添加每个目录路径\")",
+                    "target": "setDesc(\"在新行中添加每个目录路径\")"
+                },
+                {
+                    "source": "setName(\"排除文件\")",
+                    "target": "setName(\"排除文件\")"
+                },
+                {
+                    "source": "setDesc(\"在新行中添加每个文件路径（带文件扩展名！）\")",
+                    "target": "setDesc(\"在新行中添加每个文件路径（带文件扩展名！）\")"
+                },
+                {
+                    "source": "setName(\"排除链接\")",
+                    "target": "setName(\"排除链接\")"
+                },
+                {
+                    "source": "setDesc(\n      \"排除包含给定文件作为链接的文件。在新行中添加每个文件路径（带文件扩展名！）。将其设置为“*”以排除带有链接的文件。\"\n    )",
+                    "target": "setDesc(\n      \"排除包含给定文件作为链接的文件。在新行中添加每个文件路径（带文件扩展名！）。将其设置为“*”以排除带有链接的文件。\"\n    )"
+                },
+                {
+                    "source": "setName(\"排除具有给定文件类型的文件\")",
+                    "target": "setName(\"排除具有给定文件类型的文件\")"
+                },
+                {
+                    "source": "setDesc(\n      \"启用以排除具有给定文件类型的文件。禁用仅包含具有给定文件类型的文件\"\n    )",
+                    "target": "setDesc(\n      \"启用以排除具有给定文件类型的文件。禁用仅包含具有给定文件类型的文件\"\n    )"
+                },
+                {
+                    "source": "setName(\"File types\")",
+                    "target": "setName(\"File types\")"
+                },
+                {
+                    "source": "setDesc(\"效果取决于上面的切换开关\")",
+                    "target": "setDesc(\"效果取决于上面的切换开关\")"
+                },
+                {
+                    "source": "setName(\"排除标签\")",
+                    "target": "setName(\"排除标签\")"
+                },
+                {
+                    "source": "setDesc(\n      \"排除包含给定标记的文件。添加用逗号分隔的每个标记（不含 `#`)\"\n    )",
+                    "target": "setDesc(\n      \"排除包含给定标记的文件。添加用逗号分隔的每个标记（不含 `#`)\"\n    )"
+                },
+                {
+                    "source": "setName(\"每个命令要删除的文件类型。请参阅README。\")",
+                    "target": "setName(\"每个命令要删除的文件类型。请参阅README。\")"
+                },
+                {
+                    "source": "setDesc(\n      \"添加以逗号分隔的每个文件类型。设置为“*”可删除所有文件。\"\n    )",
+                    "target": "setDesc(\n      \"添加以逗号分隔的每个文件类型。设置为“*”可删除所有文件。\"\n    )"
+                },
+                {
+                    "source": "setDesc(\n      \"排除指定文件中的链接。在新行中添加每个文件路径（带文件扩展名！）\"\n    )",
+                    "target": "setDesc(\n      \"排除指定文件中的链接。在新行中添加每个文件路径（带文件扩展名！）\"\n    )"
+                },
+                {
+                    "source": "setName(\"Exclude filetypes\")",
+                    "target": "setName(\"Exclude filetypes\")"
+                },
+                {
+                    "source": "setDesc(\n      \"排除具有指定文件类型的链接。添加以逗号分隔的每个文件类型\"\n    )",
+                    "target": "setDesc(\n      \"排除具有指定文件类型的链接。添加以逗号分隔的每个文件类型\"\n    )"
+                },
+                {
+                    "source": "setDesc(\n      \"排除文件中包含给定标记的链接。添加用逗号分隔的每个标记（不含 `#`)\"\n    )",
+                    "target": "setDesc(\n      \"排除文件中包含给定标记的链接。添加用逗号分隔的每个标记（不含 `#`)\"\n    )"
+                },
+                {
+                    "source": "setDesc(\n      \"排除特定文件。在新行中添加每个文件路径（带文件扩展名！）\"\n    )",
+                    "target": "setDesc(\n      \"排除特定文件。在新行中添加每个文件路径（带文件扩展名！）\"\n    )"
+                },
+                {
+                    "source": "setName(\"Exclude directories\")",
+                    "target": "setName(\"Exclude directories\")"
+                },
+                {
+                    "source": "setDesc(\n      \"排除指定目录中的文件。在新行中添加每个目录路径\"\n    )",
+                    "target": "setDesc(\n      \"排除指定目录中的文件。在新行中添加每个目录路径\"\n    )"
+                },
+                {
+                    "source": "setName(\"捐献\")",
+                    "target": "setName(\"捐献\")"
+                },
+                {
+                    "source": "setDesc(\n      \"如果你喜欢这个插件，可以考虑捐款支持持续开发。\"\n    )",
+                    "target": "setDesc(\n      \"如果你喜欢这个插件，可以考虑捐款支持持续开发。\"\n    )"
+                },
+                {
+                    "source": "log(\"载入\" + this.manifest.name + \" 插件\")",
+                    "target": "log(\"载入\" + this.manifest.name + \" 插件\")"
+                },
+                {
+                    "source": "setTitle(\"查找孤立文件\")",
+                    "target": "setTitle(\"查找孤立文件\")"
+                },
+                {
+                    "source": "Notice(\n        \"找不到文件 - 请先运行 “查找损坏的文件 ”命令\"\n      )",
+                    "target": "Notice(\n        \"找不到文件 - 请先运行 “查找损坏的文件 ”命令\"\n      )"
+                },
+                {
+                    "source": "Notice(\"未发现断开链接\")",
+                    "target": "Notice(\"未发现断开链接\")"
+                },
+                {
+                    "source": "Notice(\n        `Found ${notLinkedFiles.length} orphaned files in ${diff}ms`\n      )",
+                    "target": "Notice(\n        `Found ${notLinkedFiles.length} orphaned files in ${diff}ms`\n      )"
+                },
+                {
+                    "source": "Notice(\n        \"找不到文件 - 请先运行 “查找孤立文件 ”命令\"\n      )",
+                    "target": "Notice(\n        \"找不到文件 - 请先运行 “查找孤立文件 ”命令\"\n      )"
+                },
+                {
+                    "source": "log(\"卸载\" + this.manifest.name + \" 插件\")",
+                    "target": "log(\"卸载\" + this.manifest.name + \" 插件\")"
+                },
+                {
+                    "source": "text: \"取消\"",
+                    "target": "text: \"取消\""
+                },
+                {
+                    "source": "text: \"确认\"",
+                    "target": "text: \"确认\""
+                },
+                {
+                    "source": "text: \"查找孤立文件的设置\"",
+                    "target": "text: \"查找孤立文件的设置\""
+                },
+                {
+                    "source": "text: \"查找断开链接的设置\"",
+                    "target": "text: \"查找断开链接的设置\""
+                },
+                {
+                    "source": "text: \"查找无标签文件的设置\"",
+                    "target": "text: \"查找无标签文件的设置\""
+                },
+                {
+                    "source": "text: \"查找空文件的设置\"",
+                    "target": "text: \"查找空文件的设置\""
+                },
+                {
+                    "source": "name: \"查找孤立文件\"",
+                    "target": "name: \"查找孤立文件\""
+                },
+                {
+                    "source": "name: \"查找断开的链接\"",
+                    "target": "name: \"查找断开的链接\""
+                },
+                {
+                    "source": "name: \"删除具有特定扩展名的孤立文件。请参阅README\"",
+                    "target": "name: \"删除具有特定扩展名的孤立文件。请参阅README\""
+                },
+                {
+                    "source": "name: \"创建断链的连接文件\"",
+                    "target": "name: \"创建断链的连接文件\""
+                },
+                {
+                    "source": "name: \"查找没有标签的文件\"",
+                    "target": "name: \"查找没有标签的文件\""
+                },
+                {
+                    "source": "name: \"查找空文件\"",
+                    "target": "name: \"查找空文件\""
+                },
+                {
+                    "source": "name: \"删除空文件\"",
+                    "target": "name: \"删除空文件\""
+                },
+                {
+                    "source": "text = \"\"",
+                    "target": "text = \"\""
+                }
+            ]
+        }
+    }
+}
